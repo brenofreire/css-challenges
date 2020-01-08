@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="frame">
+        <div class="center">
+            <div class="menu-icon">
+                <div class="line-1 no-animation"></div>
+                <div class="line-2 no-animation"></div>
+                <div class="line-3 no-animation"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var icon = document.querySelector('.menu-icon');
+    icon.addEventListener('click', el => {
+        icon.classList.toggle('active');
+        icon.querySelectorAll('div').forEach(div => {
+            div.classList.remove('no-animation');
+        });
+    });
+</script>
+</html>
