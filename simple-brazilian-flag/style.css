@@ -1,0 +1,15 @@
+#rectangle {
+    width: 400px;
+    height: 200px;
+    background-color: green;
+}
+#rectangle #polygon {
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0 50%);
+    height: 100%;
+}
+#rectangle #polygon #circle {
+    background-color: blue;
+    clip-path: circle(75px at 200px 100px);
+    height: 100%;
+}
