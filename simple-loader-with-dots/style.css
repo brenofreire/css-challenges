@@ -1,0 +1,60 @@
+.frame {
+    background-color: tomato !important;
+    display: flex;
+}
+.dot-1, .dot-2, .dot-3 {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #000;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+.dot-1 {
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    margin: -100px 0 0 -100px;
+    background-color: #333;
+    animation: vai-e-volta-1 3s ease-in-out infinite alternate;
+}
+.dot-2 {
+    width: 140px;
+    height: 140px;
+    z-index: 2;
+    margin: -70px 0 0 -70px;
+    background-color: #666;
+    animation: vai-e-volta-2 3s ease-in-out infinite alternate;
+    animation-fill-mode: both;
+}
+.dot-3 {
+    width: 90px;
+    height: 90px;
+    z-index: 3;
+    margin: -45px 0 0 -45px;
+    background-color: #999;
+    animation: vai-e-volta-3 3s ease-in-out infinite alternate;animation-fill-mode: both;
+}
+
+@keyframes vai-e-volta-1 {
+    0%, 30% {
+        transform: scale(0) rotate(-180deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes vai-e-volta-2 {
+    0%, 50% {
+        transform: scale(0) rotate(-180deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes vai-e-volta-3 {
+    0%, 70% {
+        transform: scale(0) rotate(-180deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
