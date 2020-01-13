@@ -1,0 +1,40 @@
+.frame {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.profile-pic {
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile-pic img {
+    width: 400px;
+    border-radius: 50%;
+    align-self: center;
+}
+.border-1, .border-2 {    
+    border: 5px solid #000;   
+    position: absolute;
+    border-radius: 50%;
+}
+.border-1 {
+    height: 400px;
+    width: 400px;
+    top: 0;
+    left: 0;
+    border-color: #7e2b1d #7e2b1d #7e2b1d transparent;
+    transition: all .75s ease-in-out;
+}
+.border-2 {
+    height: 425px;
+    width: 425px;
+    top: -12.5px;
+    left: -12.5px;
+    border-color:#7e2b1d transparent #7e2b1d #7e2b1d;
+    transition: all .75s ease-in-out;
+}
+.profile-pic:hover .border-1 {
+    transform: rotate(360deg);
+}
+.profile-pic:hover .border-2 {
+    transform: rotate(-360deg);
+}

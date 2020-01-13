@@ -23,7 +23,6 @@
     margin: -70px 0 0 -70px;
     background-color: #666;
     animation: vai-e-volta-2 3s ease-in-out infinite alternate;
-    animation-fill-mode: both;
 }
 .dot-3 {
     width: 90px;
@@ -31,7 +30,7 @@
     z-index: 3;
     margin: -45px 0 0 -45px;
     background-color: #999;
-    animation: vai-e-volta-3 3s ease-in-out infinite alternate;animation-fill-mode: both;
+    animation: vai-e-volta-3 3s ease-in-out infinite alternate;
 }
 
 @keyframes vai-e-volta-1 {
