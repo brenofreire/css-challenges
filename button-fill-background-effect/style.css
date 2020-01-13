@@ -1,0 +1,26 @@
+.preload {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+button {
+    outline: none;
+    padding: 12px 16px;
+    color: #af326a;
+    border: 2px solid #af326a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .2s linear;
+
+    background: linear-gradient(-30deg, transparent 0%, transparent 50%, #af326a 50.1%, #af326a 100%);
+    background-size: 400% 100%;
+    background-position: 75% 0%;
+}
+button:hover {
+    background-position: 25% 0%;
+    color: white;
+    box-shadow: 0px 0px 5px #af326a;
+}
